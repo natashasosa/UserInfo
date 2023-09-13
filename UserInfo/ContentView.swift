@@ -14,24 +14,29 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(users) { user in
-                    VStack(alignment: .leading, spacing: 5) {
-                        Text(user.name)
-                            .font(.headline)
+                    NavigationLink {
+                        UserDetailsView(user: user)
+                    } label: {
+                        VStack(alignment: .leading, spacing: 5) {
+                            Text(user.name)
+                                .font(.headline)
 
-                        HStack {
-                            Text(user.email)
-                            Spacer()
-                            Circle()
-                                .fill(user.isActive ? .green : .red)
-                                .frame(width: 10, height: 10)
+                            HStack {
+                                Text(user.email)
+                                Spacer()
+                                Circle()
+                                    .fill(user.isActive ? .green : .red)
+                                    .frame(width: 10, height: 10)
+                            }
                         }
+                        .padding(.vertical, 10)
                     }
-                    .padding(.vertical, 10)
                 }
             }
             .task {
                 await loadData()
             }
+            .navigationTitle("Users")
         }
     }
 

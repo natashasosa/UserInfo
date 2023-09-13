@@ -13,6 +13,7 @@
 		B726B3042AA8F35400793C4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B726B3032AA8F35400793C4A /* Preview Assets.xcassets */; };
 		B7E773042AB203C700B4684C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E773032AB203C700B4684C /* User.swift */; };
 		B7E773062AB20D3500B4684C /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E773052AB20D3500B4684C /* Users.swift */; };
+		B7E773082AB2345900B4684C /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E773072AB2345900B4684C /* UserDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		B726B3032AA8F35400793C4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B7E773032AB203C700B4684C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B7E773052AB20D3500B4684C /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		B7E773072AB2345900B4684C /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				B726B2FC2AA8F35400793C4A /* UserInfoApp.swift */,
 				B726B2FE2AA8F35400793C4A /* ContentView.swift */,
+				B7E773072AB2345900B4684C /* UserDetailsView.swift */,
 				B7E773032AB203C700B4684C /* User.swift */,
 				B7E773052AB20D3500B4684C /* Users.swift */,
 				B726B3002AA8F35400793C4A /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 				B726B2FF2AA8F35400793C4A /* ContentView.swift in Sources */,
 				B726B2FD2AA8F35400793C4A /* UserInfoApp.swift in Sources */,
 				B7E773042AB203C700B4684C /* User.swift in Sources */,
+				B7E773082AB2345900B4684C /* UserDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
