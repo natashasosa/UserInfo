@@ -11,26 +11,27 @@ struct ContentView: View {
     @State private var users = [User]()
 
     var body: some View {
-        List {
-            ForEach(users) { user in
-                VStack(alignment: .leading) {
-                    Text("name")
-                    Text(user.name)
-                        .font(.headline)
-                    HStack {
-                        Text("mail")
-                        Text(user.email)
-                        Spacer()
-                        Circle()
-                            .fill(user.isActive ? .green : .red)
-                            .frame(width: 3, height: 3)
-                    }
+        NavigationView {
+            List {
+                ForEach(users) { user in
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text(user.name)
+                            .font(.headline)
 
+                        HStack {
+                            Text(user.email)
+                            Spacer()
+                            Circle()
+                                .fill(user.isActive ? .green : .red)
+                                .frame(width: 10, height: 10)
+                        }
+                    }
+                    .padding(.vertical, 10)
                 }
             }
-        }
-        .task {
-            await loadData()
+            .task {
+                await loadData()
+            }
         }
     }
 
@@ -43,11 +44,15 @@ struct ContentView: View {
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
 
-            if let decodedUsers = try? JSONDecoder().decode(Users.self, from: data) {
-                users = decodedUsers.users
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .iso8601 // Set the date decoding strategy
+            
+            if let decodedUsers = try? decoder.decode([User].self, from: data) {
+                users = decodedUsers
             }
+
         } catch {
-            print("Invalid data")
+            print("Error: \(error)")
         }
     }
 }
