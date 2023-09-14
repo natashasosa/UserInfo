@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct Users: Codable {
-    var users: [User]
-}
+//struct Users: Codable {
+//    var users: [User]
+//}

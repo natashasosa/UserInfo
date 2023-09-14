@@ -13,6 +13,14 @@
 		B726B3042AA8F35400793C4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B726B3032AA8F35400793C4A /* Preview Assets.xcassets */; };
 		B78CC1B22AB3562200CE46E1 /* UserInfo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B78CC1B02AB3562200CE46E1 /* UserInfo.xcdatamodeld */; };
 		B78CC1B42AB357C400CE46E1 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78CC1B32AB357C400CE46E1 /* DataController.swift */; };
+		B78CC1BD2AB390BB00CE46E1 /* Users+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78CC1B52AB390BB00CE46E1 /* Users+CoreDataClass.swift */; };
+		B78CC1BE2AB390BB00CE46E1 /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78CC1B62AB390BB00CE46E1 /* Users+CoreDataProperties.swift */; };
+		B78CC1BF2AB390BB00CE46E1 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78CC1B72AB390BB00CE46E1 /* User+CoreDataClass.swift */; };
+		B78CC1C02AB390BB00CE46E1 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78CC1B82AB390BB00CE46E1 /* User+CoreDataProperties.swift */; };
+		B78CC1C12AB390BB00CE46E1 /* Friends+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78CC1B92AB390BB00CE46E1 /* Friends+CoreDataClass.swift */; };
+		B78CC1C22AB390BB00CE46E1 /* Friends+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78CC1BA2AB390BB00CE46E1 /* Friends+CoreDataProperties.swift */; };
+		B78CC1C32AB390BB00CE46E1 /* Tags+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78CC1BB2AB390BB00CE46E1 /* Tags+CoreDataClass.swift */; };
+		B78CC1C42AB390BB00CE46E1 /* Tags+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78CC1BC2AB390BB00CE46E1 /* Tags+CoreDataProperties.swift */; };
 		B7E773042AB203C700B4684C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E773032AB203C700B4684C /* User.swift */; };
 		B7E773062AB20D3500B4684C /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E773052AB20D3500B4684C /* Users.swift */; };
 		B7E773082AB2345900B4684C /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E773072AB2345900B4684C /* UserDetailsView.swift */; };
@@ -26,6 +34,14 @@
 		B726B3032AA8F35400793C4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B78CC1B12AB3562200CE46E1 /* UserInfo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserInfo.xcdatamodel; sourceTree = "<group>"; };
 		B78CC1B32AB357C400CE46E1 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		B78CC1B52AB390BB00CE46E1 /* Users+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		B78CC1B62AB390BB00CE46E1 /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		B78CC1B72AB390BB00CE46E1 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		B78CC1B82AB390BB00CE46E1 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		B78CC1B92AB390BB00CE46E1 /* Friends+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Friends+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		B78CC1BA2AB390BB00CE46E1 /* Friends+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Friends+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		B78CC1BB2AB390BB00CE46E1 /* Tags+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tags+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		B78CC1BC2AB390BB00CE46E1 /* Tags+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tags+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		B7E773032AB203C700B4684C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B7E773052AB20D3500B4684C /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		B7E773072AB2345900B4684C /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
@@ -61,6 +77,14 @@
 		B726B2FB2AA8F35400793C4A /* UserInfo */ = {
 			isa = PBXGroup;
 			children = (
+				B78CC1B52AB390BB00CE46E1 /* Users+CoreDataClass.swift */,
+				B78CC1B62AB390BB00CE46E1 /* Users+CoreDataProperties.swift */,
+				B78CC1B72AB390BB00CE46E1 /* User+CoreDataClass.swift */,
+				B78CC1B82AB390BB00CE46E1 /* User+CoreDataProperties.swift */,
+				B78CC1B92AB390BB00CE46E1 /* Friends+CoreDataClass.swift */,
+				B78CC1BA2AB390BB00CE46E1 /* Friends+CoreDataProperties.swift */,
+				B78CC1BB2AB390BB00CE46E1 /* Tags+CoreDataClass.swift */,
+				B78CC1BC2AB390BB00CE46E1 /* Tags+CoreDataProperties.swift */,
 				B726B2FC2AA8F35400793C4A /* UserInfoApp.swift */,
 				B78CC1B02AB3562200CE46E1 /* UserInfo.xcdatamodeld */,
 				B78CC1B32AB357C400CE46E1 /* DataController.swift */,
@@ -153,11 +177,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B78CC1B42AB357C400CE46E1 /* DataController.swift in Sources */,
+				B78CC1BE2AB390BB00CE46E1 /* Users+CoreDataProperties.swift in Sources */,
 				B7E773062AB20D3500B4684C /* Users.swift in Sources */,
+				B78CC1C22AB390BB00CE46E1 /* Friends+CoreDataProperties.swift in Sources */,
+				B78CC1BD2AB390BB00CE46E1 /* Users+CoreDataClass.swift in Sources */,
+				B78CC1BF2AB390BB00CE46E1 /* User+CoreDataClass.swift in Sources */,
 				B726B2FF2AA8F35400793C4A /* ContentView.swift in Sources */,
 				B726B2FD2AA8F35400793C4A /* UserInfoApp.swift in Sources */,
+				B78CC1C42AB390BB00CE46E1 /* Tags+CoreDataProperties.swift in Sources */,
+				B78CC1C02AB390BB00CE46E1 /* User+CoreDataProperties.swift in Sources */,
 				B7E773042AB203C700B4684C /* User.swift in Sources */,
+				B78CC1C12AB390BB00CE46E1 /* Friends+CoreDataClass.swift in Sources */,
 				B78CC1B22AB3562200CE46E1 /* UserInfo.xcdatamodeld in Sources */,
+				B78CC1C32AB390BB00CE46E1 /* Tags+CoreDataClass.swift in Sources */,
 				B7E773082AB2345900B4684C /* UserDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
