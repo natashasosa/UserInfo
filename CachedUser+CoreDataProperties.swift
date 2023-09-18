@@ -25,8 +25,40 @@ extension CachedUser {
     @NSManaged public var isActive: Bool
     @NSManaged public var name: String?
     @NSManaged public var registered: Date?
+    @NSManaged public var tags: String?
     @NSManaged public var friends: NSSet?
 
+    public var wrappedName: String {
+        name ?? "Unknown Friend"
+    }
+
+    public var wrappedId: UUID {
+        id ?? UUID()
+    }
+
+    public var wrappedCompany: String {
+        company ?? "Unknown Company"
+    }
+
+    public var wrappedEmail: String {
+        email ?? "Unknown email"
+    }
+
+    public var wrappedAddress: String {
+        address ?? "Unknown address"
+    }
+
+    public var wrappedAbout: String {
+        about ?? "No description"
+    }
+
+    public var wrappedDate: Date {
+        registered ?? Date()
+    }
+
+    public var wrappedTags: String {
+        tags ?? ""
+    }
 }
 
 // MARK: Generated accessors for friends

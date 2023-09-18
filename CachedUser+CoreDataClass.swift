@@ -2,7 +2,7 @@
 //  CachedUser+CoreDataClass.swift
 //  UserInfo
 //
-//  Created by Natasha Rebelo on 15/09/23.
+//  Created by Natasha Rebelo on 18/09/23.
 //
 //
 

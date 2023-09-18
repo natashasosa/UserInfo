@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
+    @State private var ascendingSort = true
     @State private var users = [User]()
 
     var body: some View {
@@ -53,12 +54,50 @@ struct ContentView: View {
             let decoder = JSONDecoder()
             decoder.dateDecodingStrategy = .iso8601 // Set the date decoding strategy
             
-            if let decodedUsers = try? decoder.decode([User].self, from: data) {
-                users = decodedUsers
+            guard let decodedUsers = try? decoder.decode([User].self, from: data) else {
+                print("Can't decode JSON Data!")
+                return
+            }
+            print("JSON data decoded successfully")
+
+            await MainActor.run {
+                updateCache(with: decodedUsers)
             }
 
         } catch {
             print("Error: \(error)")
+        }
+    }
+
+    func updateCache(with updateData: [User]) {
+        do {
+            print("Updating cached User data")
+
+            for user in updateData {
+                let cachedUser = CachedUser(context: moc)
+
+                cachedUser.id = user.id
+                cachedUser.isActive = user.isActive
+                cachedUser.name = user.name
+                cachedUser.age = Int16(user.age)
+                cachedUser.company = user.company
+                cachedUser.email = user.email
+                cachedUser.address = user.address
+                cachedUser.about = user.about
+                cachedUser.registered = user.registered
+                cachedUser.tags = user.tags.joined(separator: ",")
+
+                for friend in user.friends {
+                    let cachedFriend = CachedFriends(context: moc)
+
+                    cachedFriend.id = friend.id
+                    cachedFriend.name = friend.name
+                    cachedUser.addToFriends(cachedFriend)
+                }
+            }
+
+        } catch {
+            print("Failed to update cached User data")
         }
     }
 }
