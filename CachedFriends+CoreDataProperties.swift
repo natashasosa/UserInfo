@@ -2,7 +2,7 @@
 //  CachedFriends+CoreDataProperties.swift
 //  UserInfo
 //
-//  Created by Natasha Rebelo on 15/09/23.
+//  Created by Natasha Rebelo on 18/09/23.
 //
 //
 
@@ -19,14 +19,6 @@ extension CachedFriends {
     @NSManaged public var id: String?
     @NSManaged public var name: String?
     @NSManaged public var origin: CachedUser?
-
-    public var wrappedName: String {
-        name ?? "Unknown Friend"
-    }
-
-    public var wrappedId: String {
-        id ?? "Unknown Id"
-    }
 
 }
 

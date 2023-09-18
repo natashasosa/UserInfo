@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7236A5D2AB88F8C00B62C64 /* CachedFriends+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7236A5B2AB88F8C00B62C64 /* CachedFriends+CoreDataProperties.swift */; };
+		B7236A5E2AB88F8C00B62C64 /* CachedUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7236A5C2AB88F8C00B62C64 /* CachedUser+CoreDataProperties.swift */; };
 		B726B2FD2AA8F35400793C4A /* UserInfoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726B2FC2AA8F35400793C4A /* UserInfoApp.swift */; };
 		B726B2FF2AA8F35400793C4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726B2FE2AA8F35400793C4A /* ContentView.swift */; };
 		B726B3012AA8F35400793C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B726B3002AA8F35400793C4A /* Assets.xcassets */; };
@@ -16,17 +18,11 @@
 		B7E773042AB203C700B4684C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E773032AB203C700B4684C /* User.swift */; };
 		B7E773062AB20D3500B4684C /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E773052AB20D3500B4684C /* Users.swift */; };
 		B7E773082AB2345900B4684C /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E773072AB2345900B4684C /* UserDetailsView.swift */; };
-		B7F2BF742AB4A4E00077986C /* CachedFriends+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2BF6C2AB4A4E00077986C /* CachedFriends+CoreDataClass.swift */; };
-		B7F2BF752AB4A4E00077986C /* CachedFriends+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2BF6D2AB4A4E00077986C /* CachedFriends+CoreDataProperties.swift */; };
-		B7F2BF762AB4A4E00077986C /* CachedTags+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2BF6E2AB4A4E00077986C /* CachedTags+CoreDataClass.swift */; };
-		B7F2BF772AB4A4E00077986C /* CachedTags+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2BF6F2AB4A4E00077986C /* CachedTags+CoreDataProperties.swift */; };
-		B7F2BF782AB4A4E00077986C /* CachedUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2BF702AB4A4E00077986C /* CachedUser+CoreDataClass.swift */; };
-		B7F2BF792AB4A4E00077986C /* CachedUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2BF712AB4A4E00077986C /* CachedUser+CoreDataProperties.swift */; };
-		B7F2BF7A2AB4A4E00077986C /* CachedUsers+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2BF722AB4A4E00077986C /* CachedUsers+CoreDataClass.swift */; };
-		B7F2BF7B2AB4A4E00077986C /* CachedUsers+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2BF732AB4A4E00077986C /* CachedUsers+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B7236A5B2AB88F8C00B62C64 /* CachedFriends+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedFriends+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		B7236A5C2AB88F8C00B62C64 /* CachedUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedUser+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		B726B2F92AA8F35400793C4A /* UserInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B726B2FC2AA8F35400793C4A /* UserInfoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoApp.swift; sourceTree = "<group>"; };
 		B726B2FE2AA8F35400793C4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,14 +33,6 @@
 		B7E773032AB203C700B4684C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B7E773052AB20D3500B4684C /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		B7E773072AB2345900B4684C /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
-		B7F2BF6C2AB4A4E00077986C /* CachedFriends+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedFriends+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		B7F2BF6D2AB4A4E00077986C /* CachedFriends+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedFriends+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		B7F2BF6E2AB4A4E00077986C /* CachedTags+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedTags+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		B7F2BF6F2AB4A4E00077986C /* CachedTags+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedTags+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		B7F2BF702AB4A4E00077986C /* CachedUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedUser+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		B7F2BF712AB4A4E00077986C /* CachedUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedUser+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		B7F2BF722AB4A4E00077986C /* CachedUsers+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedUsers+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		B7F2BF732AB4A4E00077986C /* CachedUsers+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedUsers+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,14 +65,8 @@
 		B726B2FB2AA8F35400793C4A /* UserInfo */ = {
 			isa = PBXGroup;
 			children = (
-				B7F2BF6C2AB4A4E00077986C /* CachedFriends+CoreDataClass.swift */,
-				B7F2BF6D2AB4A4E00077986C /* CachedFriends+CoreDataProperties.swift */,
-				B7F2BF6E2AB4A4E00077986C /* CachedTags+CoreDataClass.swift */,
-				B7F2BF6F2AB4A4E00077986C /* CachedTags+CoreDataProperties.swift */,
-				B7F2BF702AB4A4E00077986C /* CachedUser+CoreDataClass.swift */,
-				B7F2BF712AB4A4E00077986C /* CachedUser+CoreDataProperties.swift */,
-				B7F2BF722AB4A4E00077986C /* CachedUsers+CoreDataClass.swift */,
-				B7F2BF732AB4A4E00077986C /* CachedUsers+CoreDataProperties.swift */,
+				B7236A5B2AB88F8C00B62C64 /* CachedFriends+CoreDataProperties.swift */,
+				B7236A5C2AB88F8C00B62C64 /* CachedUser+CoreDataProperties.swift */,
 				B726B2FC2AA8F35400793C4A /* UserInfoApp.swift */,
 				B78CC1B02AB3562200CE46E1 /* UserInfo.xcdatamodeld */,
 				B78CC1B32AB357C400CE46E1 /* DataController.swift */,
@@ -176,21 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7F2BF752AB4A4E00077986C /* CachedFriends+CoreDataProperties.swift in Sources */,
 				B78CC1B42AB357C400CE46E1 /* DataController.swift in Sources */,
-				B7F2BF742AB4A4E00077986C /* CachedFriends+CoreDataClass.swift in Sources */,
 				B7E773062AB20D3500B4684C /* Users.swift in Sources */,
-				B7F2BF782AB4A4E00077986C /* CachedUser+CoreDataClass.swift in Sources */,
-				B7F2BF7B2AB4A4E00077986C /* CachedUsers+CoreDataProperties.swift in Sources */,
 				B726B2FF2AA8F35400793C4A /* ContentView.swift in Sources */,
 				B726B2FD2AA8F35400793C4A /* UserInfoApp.swift in Sources */,
-				B7F2BF762AB4A4E00077986C /* CachedTags+CoreDataClass.swift in Sources */,
-				B7F2BF7A2AB4A4E00077986C /* CachedUsers+CoreDataClass.swift in Sources */,
 				B7E773042AB203C700B4684C /* User.swift in Sources */,
-				B7F2BF792AB4A4E00077986C /* CachedUser+CoreDataProperties.swift in Sources */,
-				B7F2BF772AB4A4E00077986C /* CachedTags+CoreDataProperties.swift in Sources */,
 				B78CC1B22AB3562200CE46E1 /* UserInfo.xcdatamodeld in Sources */,
 				B7E773082AB2345900B4684C /* UserDetailsView.swift in Sources */,
+				B7236A5E2AB88F8C00B62C64 /* CachedUser+CoreDataProperties.swift in Sources */,
+				B7236A5D2AB88F8C00B62C64 /* CachedFriends+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

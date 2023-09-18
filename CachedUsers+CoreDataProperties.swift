@@ -18,6 +18,14 @@ extension CachedUsers {
 
     @NSManaged public var user: NSSet?
 
+    public var userArray: [CachedUser] {
+        let set = user as? Set<CachedUser> ?? []
+
+        return set.sorted {
+            $0.wrappedName < $1.wrappedName
+        }
+    }
+
 }
 
 // MARK: Generated accessors for user
