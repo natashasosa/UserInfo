@@ -14,32 +14,58 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            List {
-                ForEach(users) { user in
-                    NavigationLink {
-                        UserDetailsView(user: user)
-                    } label: {
-                        VStack(alignment: .leading, spacing: 5) {
-                            Text(user.name)
-                                .font(.headline)
+            SortedListView(descriptor: [NSSortDescriptor(keyPath: \CachedUser.name, ascending: true)]) { (user: CachedUser) in
+                NavigationLink {
+                    UserDetailsView(user: user)
+                } label: {
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text(user.wrappedName)
+                            .font(.headline)
 
-                            HStack {
-                                Text(user.email)
-                                Spacer()
-                                Circle()
-                                    .fill(user.isActive ? .green : .red)
-                                    .frame(width: 10, height: 10)
-                            }
+                        HStack {
+                            Text(user.wrappedEmail)
+                            Spacer()
+                            Circle()
+                                .fill(user.isActive ? .green : .red)
+                                .frame(width: 10, height: 10)
                         }
-                        .padding(.vertical, 10)
                     }
+                    .padding(.vertical, 10)
                 }
+
             }
+            .navigationTitle("Users")
             .task {
                 await loadData()
             }
-            .navigationTitle("Users")
         }
+//        NavigationView {
+//            List {
+//                ForEach(users) { user in
+//                    NavigationLink {
+//                        UserDetailsView(user: user)
+//                    } label: {
+//                        VStack(alignment: .leading, spacing: 5) {
+//                            Text(user.name)
+//                                .font(.headline)
+//
+//                            HStack {
+//                                Text(user.email)
+//                                Spacer()
+//                                Circle()
+//                                    .fill(user.isActive ? .green : .red)
+//                                    .frame(width: 10, height: 10)
+//                            }
+//                        }
+//                        .padding(.vertical, 10)
+//                    }
+//                }
+//            }
+//            .task {
+//                await loadData()
+//            }
+//            .navigationTitle("Users")
+//        }
     }
 
     func loadData() async {

@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct UserDetailsView: View {
-    var user: User
+    //var user: User
+    var user: CachedUser
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 5) {
                 HStack(alignment: .top) {
-                    Text(user.name)
+                    Text(user.wrappedName)
                         .font(.title2.weight(.bold))
                     Spacer()
                     Circle()
@@ -23,15 +25,15 @@ struct UserDetailsView: View {
 
 
                 Text("Age: \(user.age)")
-                Text("Email: \(user.email)")
-                Text("Company: \(user.company)")
+                Text("Email: \(user.wrappedEmail)")
+                Text("Company: \(user.wrappedCompany)")
 
-                Text("About \(user.name): \(user.about)")
+                Text("About \(user.wrappedName): \(user.wrappedAbout)")
                     .padding(.vertical)
 
                 Text("Friends:")
-                ForEach(user.friends) {friend in
-                    Text(friend.name)
+                ForEach(user.friendsArray) {friend in
+                    Text(friend.wrappedName)
                 }
             }
             .navigationTitle("User Details")
@@ -40,8 +42,8 @@ struct UserDetailsView: View {
     }
 }
 
-struct UserDetailsView_Previews: PreviewProvider {
-    static var previews: some View {
-        UserDetailsView(user: User(id: "id", isActive: true, name: "name", age: 30, company: "Company name", email: "mail@example.com", address: "Address", about: "Brief description", registered: nil, tags: [], friends: []))
-    }
-}
+//struct UserDetailsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        UserDetailsView(user: User(id: "id", isActive: true, name: "name", age: 30, company: "Company name", email: "mail@example.com", address: "Address", about: "Brief description", registered: nil, tags: [], friends: []))
+//    }
+//}

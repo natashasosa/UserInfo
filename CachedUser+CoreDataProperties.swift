@@ -59,6 +59,12 @@ extension CachedUser {
     public var wrappedTags: String {
         tags ?? ""
     }
+
+    var friendsArray: [CachedFriends] {
+        let friendList = friends as? Set<CachedFriends> ?? []
+
+        return Array(friendList.sorted {$0.wrappedName < $1.wrappedName})
+    }
 }
 
 // MARK: Generated accessors for friends

@@ -11,6 +11,7 @@
 		B7236A642AB8945B00B62C64 /* CachedFriends+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7236A602AB8945B00B62C64 /* CachedFriends+CoreDataProperties.swift */; };
 		B7236A692AB8971800B62C64 /* CachedUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7236A672AB8971800B62C64 /* CachedUser+CoreDataClass.swift */; };
 		B7236A6A2AB8971800B62C64 /* CachedUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7236A682AB8971800B62C64 /* CachedUser+CoreDataProperties.swift */; };
+		B7236A6C2AB89E3300B62C64 /* SortedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7236A6B2AB89E3300B62C64 /* SortedListView.swift */; };
 		B726B2FD2AA8F35400793C4A /* UserInfoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726B2FC2AA8F35400793C4A /* UserInfoApp.swift */; };
 		B726B2FF2AA8F35400793C4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B726B2FE2AA8F35400793C4A /* ContentView.swift */; };
 		B726B3012AA8F35400793C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B726B3002AA8F35400793C4A /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		B7236A602AB8945B00B62C64 /* CachedFriends+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedFriends+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		B7236A672AB8971800B62C64 /* CachedUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedUser+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		B7236A682AB8971800B62C64 /* CachedUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CachedUser+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		B7236A6B2AB89E3300B62C64 /* SortedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedListView.swift; sourceTree = "<group>"; };
 		B726B2F92AA8F35400793C4A /* UserInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B726B2FC2AA8F35400793C4A /* UserInfoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoApp.swift; sourceTree = "<group>"; };
 		B726B2FE2AA8F35400793C4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				B78CC1B02AB3562200CE46E1 /* UserInfo.xcdatamodeld */,
 				B78CC1B32AB357C400CE46E1 /* DataController.swift */,
 				B726B2FE2AA8F35400793C4A /* ContentView.swift */,
+				B7236A6B2AB89E3300B62C64 /* SortedListView.swift */,
 				B7E773072AB2345900B4684C /* UserDetailsView.swift */,
 				B7E773032AB203C700B4684C /* User.swift */,
 				B7E773052AB20D3500B4684C /* Users.swift */,
@@ -167,6 +170,7 @@
 				B7236A642AB8945B00B62C64 /* CachedFriends+CoreDataProperties.swift in Sources */,
 				B78CC1B42AB357C400CE46E1 /* DataController.swift in Sources */,
 				B7236A6A2AB8971800B62C64 /* CachedUser+CoreDataProperties.swift in Sources */,
+				B7236A6C2AB89E3300B62C64 /* SortedListView.swift in Sources */,
 				B7236A632AB8945B00B62C64 /* CachedFriends+CoreDataClass.swift in Sources */,
 				B7E773062AB20D3500B4684C /* Users.swift in Sources */,
 				B726B2FF2AA8F35400793C4A /* ContentView.swift in Sources */,
